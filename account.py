@@ -69,16 +69,16 @@ class BankAccount:
             time=withdraw(['time'])
             amount=withdraw(['amount'])
             formatted_time=time.strftime("%A,%drd %B %Y, %H:%M:%P")
-            w_statement="You have withdrawn {} on {}".format(amount,formatted_time)
-            print(w_statement)
+            withdraw statement="You have withdrawn {} on {}".format(amount,formatted_time)
+            print(withdraw statement)
 
     def show_deposit_statement(self):
         for deposit in self.deposits:
             time=deposit(['time'])
             amount=deposit(['amount'])
             formatted_time=time.strftime("%A ,%d /%B /%Y, %H:%M:%P")
-            statement="You deposited {} on {}".format(amount,formatted_time)
-            print(statement)
+            Deposit statement="You deposited {} on {}".format(amount,formatted_time)
+            print(Deposit statement)
 
     def request_loan(self,amount):
         try:
@@ -87,7 +87,7 @@ class BankAccount:
             print("Please enter amount in figures")
             return
         if amount <=0:
-            print("Sorry!You cannot request a loan of that amount")
+            print("Sorry!You cannot request that loan amount")
 
         else:
             self.loan = amount
